@@ -1,8 +1,8 @@
 # my_template
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit)
-[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/bybatkhuu/mod.python-template/2.build-publish.yml?logo=GitHub)](https://github.com/bybatkhuu/mod.python-template/actions/workflows/2.build-publish.yml)
-[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/bybatkhuu/mod.python-template?logo=GitHub)](https://github.com/bybatkhuu/mod.python-template/releases)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/bybatkhuu/module.python-template/2.build-publish.yml?logo=GitHub)](https://github.com/bybatkhuu/module.python-template/actions/workflows/2.build-publish.yml)
+[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/bybatkhuu/module.python-template?logo=GitHub)](https://github.com/bybatkhuu/module.python-template/releases)
 
 `my_template` is a template for python package.
 
@@ -35,12 +35,12 @@ pip install -i https://test.pypi.org/simple -U my-template
 
 ```sh
 # Install package by git:
-pip install git+https://github.com/bybatkhuu/mod.python-template.git
+pip install git+https://github.com/bybatkhuu/module.python-template.git
 ```
 
 **C.** Install from **pre-built release** files
 
-1. Download **`.whl`** or **`.tar.gz`** file from **releases** - <https://github.com/bybatkhuu/mod.python-template/releases>
+1. Download **`.whl`** or **`.tar.gz`** file from **releases** - <https://github.com/bybatkhuu/module.python-template/releases>
 2. Install with pip:
 
 ```sh
@@ -54,7 +54,7 @@ pip install ./my_template-[VERSION].tar.gz
 
 ```sh
 # Clone repository by git:
-git clone https://github.com/bybatkhuu/mod.python-template.git my_template
+git clone https://github.com/bybatkhuu/module.python-template.git my_template
 cd ./my_template
 
 # Install python build tool:
@@ -75,7 +75,7 @@ pip install ./dist/my_template-${_VERSION}.tar.gz
 
 ```sh
 # Clone repository by git:
-git clone https://github.com/bybatkhuu/mod.python-template.git my_template
+git clone https://github.com/bybatkhuu/module.python-template.git my_template
 cd ./my_template
 
 # Install with editable development mode:
@@ -86,7 +86,7 @@ pip install -e .
 
 ```sh
 # Clone repository by git:
-git clone https://github.com/bybatkhuu/mod.python-template.git my_template
+git clone https://github.com/bybatkhuu/module.python-template.git my_template
 cd ./my_template
 
 # Install python dependencies:
@@ -108,7 +108,7 @@ my_base = MyBase()
 
 ### **Simple**
 
-[**`main.py`**](https://github.com/bybatkhuu/mod.python-template/blob/main/examples/simple/main.py)
+[**`main.py`**](https://github.com/bybatkhuu/module.python-template/blob/main/examples/simple/main.py)
 
 ```python
 import sys
@@ -126,7 +126,7 @@ if __name__ == "__main__":
     logger.info(f" My item => {_my_base.item}")
 ```
 
-Run the [**`examples/simple`**](https://github.com/bybatkhuu/mod.python-template/tree/main/examples/simple):
+Run the [**`examples/simple`**](https://github.com/bybatkhuu/module.python-template/tree/main/examples/simple):
 
 ```sh
 cd ./examples/simple
@@ -156,7 +156,7 @@ python -m pytest -sv
 
 ## Environment Variables
 
-You can use the following environment variables inside [**`.env.example`**](https://github.com/bybatkhuu/mod.python-template/blob/main/.env.example) file:
+You can use the following environment variables inside [**`.env.example`**](https://github.com/bybatkhuu/module.python-template/blob/main/.env.example) file:
 
 ```sh
 # ENV=development
@@ -165,8 +165,8 @@ You can use the following environment variables inside [**`.env.example`**](http
 
 ## Documentation
 
-- [docs](https://github.com/bybatkhuu/mod.python-template/blob/main/docs/README.md)
-- [scripts](https://github.com/bybatkhuu/mod.python-template/blob/main/docs/scripts/README.md)
+- [docs](https://github.com/bybatkhuu/module.python-template/blob/main/docs/README.md)
+- [scripts](https://github.com/bybatkhuu/module.python-template/blob/main/docs/scripts/README.md)
 
 ---
 
