@@ -28,7 +28,7 @@ Choose one of the following methods to install the package **[A ~ F]**:
 
 ```sh
 # Install or upgrade package:
-pip install -U my-template
+pip install -U my-template -i https://pypi.org/simple
 ```
 
 **B.** Install latest version from **GitHub**
