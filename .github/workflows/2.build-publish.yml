@@ -50,14 +50,14 @@ jobs:
           python -m pip install -U pip
           python -m pip install -r ./requirements.build.txt
       - name: Build and publish package
-        # run: |
-        #   echo -e "[testpypi]\nusername = __token__\npassword = ${{ secrets.TEST_PYPI_API_TOKEN }}" > ~/.pypirc
-        #   ./scripts/build.sh -c -t -u
-        #   rm -rfv ~/.pypirc
         run: |
-          echo -e "[pypi]\nusername = __token__\npassword = ${{ secrets.PYPI_API_TOKEN }}" > ~/.pypirc
-          ./scripts/build.sh -c -t -u -p
+          echo -e "[testpypi]\nusername = __token__\npassword = ${{ secrets.TEST_PYPI_API_TOKEN }}" > ~/.pypirc
+          ./scripts/build.sh -c -t -u
           rm -rfv ~/.pypirc
+        # run: |
+        #   echo -e "[pypi]\nusername = __token__\npassword = ${{ secrets.PYPI_API_TOKEN }}" > ~/.pypirc
+        #   ./scripts/build.sh -c -t -u -p
+        #   rm -rfv ~/.pypirc
       - name: Create release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
