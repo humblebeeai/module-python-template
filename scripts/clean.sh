@@ -13,9 +13,32 @@ source ./scripts/base.sh
 ## --- Base --- ##
 
 
+## --- Variables --- ##
+# Flags:
+_IS_ALL=false
+## --- Variables --- ##
+
+
 ## --- Main --- ##
 main()
 {
+	## --- Menu arguments --- ##
+	if [ -n "${1:-}" ]; then
+		for _input in "${@:-}"; do
+			case ${_input} in
+				-a | --all)
+					_IS_ALL=true
+					shift;;
+				*)
+					echoError "Failed to parsing input -> ${_input}"
+					echoInfo "USAGE: ${0} -a, --all"
+					exit 1;;
+			esac
+		done
+	fi
+	## --- Menu arguments --- ##
+
+
 	echoInfo "Cleaning..."
 
 	find . -type f -name ".DS_Store" -print -delete || exit 2
@@ -26,9 +49,11 @@ main()
 	rm -rfv .pytest_cache || exit 2
 	rm -rfv build || exit 2
 	rm -rfv dist || exit 2
-	# rm -rfv ./*.egg-info || exit 2
 	rm -rfv .coverage || exit 2
 
+	if [ "${_IS_ALL}" == true ]; then
+		rm -rfv ./*.egg-info || exit 2
+	fi
 	echoOk "Done."
 }
 
