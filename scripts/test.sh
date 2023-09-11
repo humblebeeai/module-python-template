@@ -28,6 +28,7 @@ fi
 # Flags:
 _IS_LOGGING=false
 _IS_COVERAGE=false
+_IS_VERBOSE=false
 ## --- Variables --- ##
 
 
@@ -44,9 +45,12 @@ main()
 				-c | --cov)
 					_IS_COVERAGE=true
 					shift;;
+				-v | --verbose)
+					_IS_VERBOSE=true
+					shift;;
 				*)
 					echoError "Failed to parsing input -> ${_input}"
-					echoInfo "USAGE: ${0} -l, --log | -c, --cov"
+					echoInfo "USAGE: ${0} -l, --log | -c, --cov | -v, --verbose"
 					exit 1;;
 			esac
 		done
@@ -64,6 +68,7 @@ main()
 
 	_logging_param=""
 	_coverage_param=""
+	_verbose_param=""
 	if [ "${_IS_LOGGING}" == true ]; then
 		_logging_param="-o log_cli=true"
 	fi
@@ -72,9 +77,13 @@ main()
 		_coverage_param="--cov"
 	fi
 
+	if [ "${_IS_VERBOSE}" == true ]; then
+		_verbose_param="-vv"
+	fi
+
 	echoInfo "Running test..."
 	# shellcheck disable=SC2086
-	python -m pytest -sv ${_coverage_param} ${_logging_param} || exit 2
+	python -m pytest -sv ${_coverage_param} ${_logging_param} ${_verbose_param} || exit 2
 	echoOk "Done."
 }
 
