@@ -44,6 +44,7 @@ main()
 	find . -type f -name ".DS_Store" -print -delete || exit 2
 	find . -type f -name ".Thumbs.db" -print -delete || exit 2
 	find . -type d -name "__pycache__" -exec rm -rfv {} + || exit 2
+	# find ./examples -type d -name "logs" -exec rm -rfv {} + || exit 2
 
 	rm -rfv .benchmarks || exit 2
 	rm -rfv .pytest_cache || exit 2
