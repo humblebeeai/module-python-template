@@ -24,8 +24,59 @@ fi
 ## --- Base --- ##
 
 
-echoInfo "Running test..."
-python -m pytest -sv || exit 2
-# python -m pytest -sv -o log_cli=true || exit 2
-# python -m pytest -sv --cov -o log_cli=true || exit 2
-echoOk "Done."
+## --- Variables --- ##
+# Flags:
+_IS_LOGGING=false
+_IS_COVERAGE=false
+## --- Variables --- ##
+
+
+## --- Main --- ##
+main()
+{
+	## --- Menu arguments --- ##
+	if [ -n "${1:-}" ]; then
+		for _input in "${@:-}"; do
+			case ${_input} in
+				-l | --log)
+					_IS_LOGGING=true
+					shift;;
+				-c | --cov)
+					_IS_COVERAGE=true
+					shift;;
+				*)
+					echoError "Failed to parsing input -> ${_input}"
+					echoInfo "USAGE: ${0} -l, --log | -c, --cov"
+					exit 1;;
+			esac
+		done
+	fi
+	## --- Menu arguments --- ##
+
+
+	if [ "${_IS_COVERAGE}" == true ]; then
+		if ! python -c "import pytest_cov" &> /dev/null; then
+			echoError "'pytest-cov' python package is not installed."
+			exit 1
+		fi
+	fi
+
+
+	_logging_param=""
+	_coverage_param=""
+	if [ "${_IS_LOGGING}" == true ]; then
+		_logging_param="-o log_cli=true"
+	fi
+
+	if [ "${_IS_COVERAGE}" == true ]; then
+		_coverage_param="--cov"
+	fi
+
+	echoInfo "Running test..."
+	# shellcheck disable=SC2086
+	python -m pytest -sv ${_coverage_param} ${_logging_param} || exit 2
+	echoOk "Done."
+}
+
+main "${@:-}"
+## --- Main --- ##
