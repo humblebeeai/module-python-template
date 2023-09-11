@@ -35,4 +35,8 @@ class MyBase:
                 f"`item` attribute type {type(item)} is invalid, must be a <str>!"
             )
 
+        item = item.strip()
+        if item == "":
+            raise ValueError("`item` attribute value is empty!")
+
         self.__item = item
