@@ -1,3 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from .my_template import *
+try:
+    from .src.my_module01 import *
+except ImportError:
+    from src.my_module01 import *

@@ -3,12 +3,12 @@ requires = ["setuptools>=70.3.0,<80.0.0", "setuptools-scm>=8.0.4,<9.0.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "my_template"
+name = "my_module01"
 authors = [{ name = "Batkhuu Byambajav", email = "batkhuu10@gmail.com" }]
-description = "'my_template' is a template module for python projects."
+description = "'my_module01' is a template module for python package."
 readme = "README.md"
 requires-python = ">=3.9,<4.0"
-keywords = ["my_template", "module", "package", "python", "template"]
+keywords = ["my_module01", "template", "module", "python", "package"]
 license = { file = "LICENSE.txt" }
 classifiers = [
 	"Development Status :: 4 - Beta",
@@ -27,13 +27,15 @@ dynamic = ["version", "dependencies", "optional-dependencies"]
 
 # [tool.setuptools.packages.find]
 # where = ["src"]
-# include = ["my_template*"]
+# include = ["my_module01*"]
 # namespaces = false
 
 [tool.setuptools.dynamic]
-version = { attr = "my_template.__version__.__version__" }
+version = { attr = "my_module01.__version__.__version__" }
 dependencies = { file = "./requirements.txt" }
-# optional-dependencies.extra = { file = ["./requirements/requirements.extra.txt"] }
+optional-dependencies.extra = { file = [
+	"./requirements/requirements.extra.txt",
+] }
 
 [project.urls]
 Homepage = "https://github.com/bybatkhuu/module.python-template"
