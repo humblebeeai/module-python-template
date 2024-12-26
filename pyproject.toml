@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "my_module01"
 authors = [{ name = "Batkhuu Byambajav", email = "batkhuu10@gmail.com" }]
-description = "'my_module01' is a template module for python package."
+description = "This is a template module for python projects."
 readme = "README.md"
 requires-python = ">=3.9,<4.0"
 keywords = ["my_module01", "template", "module", "python", "package"]
