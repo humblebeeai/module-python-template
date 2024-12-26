@@ -1,6 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
+
 ## --- Base --- ##
 # Getting path of this script file:
 _SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
@@ -13,12 +14,12 @@ source ./scripts/base.sh
 
 
 if [ -z "$(which python)" ]; then
-	echoError "Python not found or not installed."
+	echoError "'python' not found or not installed."
 	exit 1
 fi
 
 if [ -z "$(which pytest)" ]; then
-	echoError "Pytest not found or not installed."
+	echoError "'pytest' not found or not installed."
 	exit 1
 fi
 ## --- Base --- ##
@@ -50,7 +51,7 @@ main()
 					shift;;
 				*)
 					echoError "Failed to parsing input -> ${_input}"
-					echoInfo "USAGE: ${0} -l, --log | -c, --cov | -v, --verbose"
+					echoInfo "USAGE: ${0}  -l, --log | -c, --cov | -v, --verbose"
 					exit 1;;
 			esac
 		done
@@ -78,12 +79,12 @@ main()
 	fi
 
 	if [ "${_IS_VERBOSE}" == true ]; then
-		_verbose_param="-vv"
+		_verbose_param="-svv"
 	fi
 
 	echoInfo "Running test..."
 	# shellcheck disable=SC2086
-	python -m pytest -sv ${_coverage_param} ${_logging_param} ${_verbose_param} || exit 2
+	python -m pytest -v ${_coverage_param} ${_logging_param} ${_verbose_param} || exit 2
 	echoOk "Done."
 }
 
