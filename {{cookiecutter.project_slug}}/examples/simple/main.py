@@ -6,7 +6,7 @@ import sys
 import logging
 
 ## Internal modules
-from {{cookiecutter.module_name}}  import MyClass
+from {{cookiecutter.module_name}} import MyClass
 
 
 logger = logging.getLogger(__name__)

@@ -3,7 +3,7 @@
 [**`templates/configs/config.yml`**](https://github.com/{{cookiecutter.repo_owner}}/{{cookiecutter.repo_name}}/blob/main/templates/configs/config.yml):
 
 ```yaml
-item_cleaner:
+{{cookiecutter.module_name}}:
   min_length: 2
   max_length: 100
   min_value: 0.0
