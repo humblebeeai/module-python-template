@@ -3,7 +3,7 @@
 [**`templates/configs/config.yml`**](https://github.com/bybatkhuu/module.python-template/blob/main/templates/configs/config.yml):
 
 ```yaml
-item_cleaner:
+my_module01:
   min_length: 2
   max_length: 100
   min_value: 0.0

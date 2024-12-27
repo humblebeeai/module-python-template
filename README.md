@@ -205,7 +205,7 @@ if __name__ == "__main__":
 [**`templates/configs/config.yml`**](https://github.com/bybatkhuu/module.python-template/blob/main/templates/configs/config.yml):
 
 ```yaml
-my_class:
+my_module01:
   min_length: 2
   max_length: 100
   min_value: 0.0
