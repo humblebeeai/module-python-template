@@ -4,24 +4,27 @@ import logging
 
 import pytest
 
-from my_module01 import MyClass
+try:
+    from my_module01 import MyClass
+except ImportError:
+    from src.my_module01 import MyClass
 
 
 logger = logging.getLogger(__name__)
 
 
 @pytest.fixture
-def my_class():
-    _my_class = MyClass()
+def my_object():
+    _my_object = MyClass()
 
-    yield _my_class
+    yield _my_object
 
-    del _my_class
+    del _my_object
 
 
-def test_init(my_class):
+def test_init(my_object):
     logger.info("Testing initialization of 'MyClass'...")
 
-    assert isinstance(my_class, MyClass)
+    assert isinstance(my_object, MyClass)
 
     logger.info("Done: Initialization of 'MyClass'.\n")

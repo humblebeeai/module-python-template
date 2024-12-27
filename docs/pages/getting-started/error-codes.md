@@ -11,7 +11,7 @@ from my_module01 import MyClass
 
 
 try:
-    _my_class = MyClass(
+    _my_object = MyClass(
         config={
             "min_length": 0,
             "max_length": "three",
