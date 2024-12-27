@@ -20,20 +20,20 @@ cd ~/workspaces/projects
 **OPTION A.** Clone the repository:
 
 ```sh
-git clone https://github.com/bybatkhuu/module.python-template.git && \
-    cd module.python-template
+git clone https://github.com/{{cookiecutter.repo_owner}}/{{cookiecutter.repo_name}}.git && \
+    cd {{cookiecutter.repo_name}}
 ```
 
 **OPTION B.** Clone the repository (for **DEVELOPMENT**: git + ssh key):
 
 ```sh
-git clone git@github.com:bybatkhuu/module.python-template.git && \
-    cd module.python-template
+git clone git@github.com:{{cookiecutter.repo_owner}}/{{cookiecutter.repo_name}}.git && \
+    cd {{cookiecutter.repo_name}}
 ```
 
 **OPTION C.** Download source code:
 
-1. Download archived **zip** file from [**releases**](https://github.com/bybatkhuu/module.python-template/releases).
+1. Download archived **zip** file from [**releases**](https://github.com/{{cookiecutter.repo_owner}}/{{cookiecutter.repo_name}}/releases).
 2. Extract it into the projects directory.
 
 ### 2. 📦 Install the package
@@ -45,16 +45,16 @@ git clone git@github.com:bybatkhuu/module.python-template.git && \
 
 ```sh
 # Install from staging TestPyPi:
-pip install -i https://test.pypi.org/simple -U my-module01
+pip install -i https://test.pypi.org/simple -U {{cookiecutter.module_name}}
 
 # Or install from production PyPi:
-# pip install -U my-module01
+# pip install -U {{cookiecutter.module_name}}
 ```
 
 **OPTION B.** Install latest version directly from **GitHub** repository:
 
 ```sh
-pip install git+https://github.com/bybatkhuu/module.python-template.git
+pip install git+https://github.com/{{cookiecutter.repo_owner}}/{{cookiecutter.repo_name}}.git
 ```
 
 **OPTION C.** Install from the downloaded **source code**:
@@ -75,15 +75,15 @@ pip install -r ./requirements/requirements.dev.txt
 
 **OPTION E.** Install from **pre-built release** files:
 
-1. Download **`.whl`** or **`.tar.gz`** file from [**releases**](https://github.com/bybatkhuu/module.python-template/releases)
+1. Download **`.whl`** or **`.tar.gz`** file from [**releases**](https://github.com/{{cookiecutter.repo_owner}}/{{cookiecutter.repo_name}}/releases)
 2. Install with pip:
 
 ```sh
 # Install from .whl file:
-pip install ./my_module01-[VERSION]-py3-none-any.whl
+pip install ./{{cookiecutter.module_name}}-[VERSION]-py3-none-any.whl
 
 # Or install from .tar.gz file:
-pip install ./my_module01-[VERSION].tar.gz
+pip install ./{{cookiecutter.module_name}}-[VERSION].tar.gz
 ```
 
 **OPTION F.** Copy the **module** into the project directory (for **testing**):
@@ -93,7 +93,7 @@ pip install ./my_module01-[VERSION].tar.gz
 pip install -r ./requirements.txt
 
 # Copy the module source code into the project:
-cp -r ./src/my_module01 [PROJECT_DIR]
+cp -r ./src/{{cookiecutter.module_name}} [PROJECT_DIR]
 # For example:
-cp -r ./src/my_module01 /some/path/project/
+cp -r ./src/{{cookiecutter.module_name}} /some/path/project/
 ```

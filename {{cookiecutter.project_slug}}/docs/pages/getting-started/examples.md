@@ -2,7 +2,7 @@
 
 ## Simple
 
-[**`examples/simple/main.py`**](https://github.com/bybatkhuu/module.python-template/blob/main/examples/simple/main.py):
+[**`examples/simple/main.py`**](https://github.com/{{cookiecutter.repo_owner}}/{{cookiecutter.repo_name}}/blob/main/examples/simple/main.py):
 
 ```python
 ## Standard libraries
@@ -10,7 +10,7 @@ import sys
 import logging
 
 ## Internal modules
-from my_module01 import MyClass
+from {{cookiecutter.module_name}} import MyClass
 
 
 logger = logging.getLogger(__name__)

@@ -1,6 +1,6 @@
 # ⚙️ Configuration
 
-[**`templates/configs/config.yml`**](https://github.com/bybatkhuu/module.python-template/blob/main/templates/configs/config.yml):
+[**`templates/configs/config.yml`**](https://github.com/{{cookiecutter.repo_owner}}/{{cookiecutter.repo_name}}/blob/main/templates/configs/config.yml):
 
 ```yaml
 item_cleaner:
@@ -13,7 +13,7 @@ item_cleaner:
 
 ## 🌎 Environment Variables
 
-[**`.env.example`**](https://github.com/bybatkhuu/module.python-template/blob/main/.env.example):
+[**`.env.example`**](https://github.com/{{cookiecutter.repo_owner}}/{{cookiecutter.repo_name}}/blob/main/.env.example):
 
 ```sh
 # ENV=development

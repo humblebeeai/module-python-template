@@ -1,3 +1,3 @@
 # MyClassConfigPM
 
-::: src.my_module01.MyClassConfigPM
+::: src.{{cookiecutter.module_name}}.MyClassConfigPM

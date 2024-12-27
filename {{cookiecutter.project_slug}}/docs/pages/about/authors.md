@@ -2,4 +2,4 @@
 
 This project is developed by the following authors:
 
-- [@bybatkhuu](https://github.com/bybatkhuu) - Batkhuu Byambajav
+- [@{{cookiecutter.author_username}}](https://github.com/{{cookiecutter.author_username}}) - {{cookiecutter.author_fullname}}

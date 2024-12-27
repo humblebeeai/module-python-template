@@ -5,9 +5,9 @@ import logging
 import pytest
 
 try:
-    from my_module01 import MyClass
+    from {{cookiecutter.module_name}} import MyClass
 except ImportError:
-    from src.my_module01 import MyClass
+    from src.{{cookiecutter.module_name}} import MyClass
 
 
 logger = logging.getLogger(__name__)

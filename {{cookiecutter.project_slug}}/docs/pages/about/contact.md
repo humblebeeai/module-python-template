@@ -1,3 +1,3 @@
 # 📞 Contact
 
-You can contact me by email at [batkhuu10@gmail.com](mailto:batkhuu10@gmail.com).
+You can contact me by email at [{{cookiecutter.author_email}}](mailto:{{cookiecutter.author_email}}).

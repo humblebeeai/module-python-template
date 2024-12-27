@@ -1,3 +1,3 @@
 # MyClass
 
-::: src.my_module01.MyClass
+::: src.{{cookiecutter.module_name}}.MyClass

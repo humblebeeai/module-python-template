@@ -17,7 +17,7 @@ project/
 ├── examples/               # Example source codes of this project
 ├── requirements/           # Python dependency requirements for different environments
 ├── scripts/                # Helpful scripts to automate tasks or assist in the development process
-├── my_module01/            # Main CODEBASE of this project as a python module
+├── {{cookiecutter.module_name}}/            # Main CODEBASE of this project as a python module
 |   ├── modules/                # External modules for this project
 |   |   ├── module_1/
 |   |   ├── module_2/

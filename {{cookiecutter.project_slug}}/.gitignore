@@ -500,7 +500,7 @@ data/
 dataset/
 datasets/
 .benchmarks/
-module.python-template/
+{{cookiecutter.project_slug}}/
 
 # Files:
 log
@@ -511,7 +511,7 @@ data
 dataset
 datasets
 .benchmarks
-module.python-template
+{{cookiecutter.project_slug}}
 *.bak
 version.py
 sample.py

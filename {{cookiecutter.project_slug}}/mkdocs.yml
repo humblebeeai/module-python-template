@@ -1,8 +1,8 @@
-site_name: My Module
-site_description: "This is a template module for python projects."
-site_url: https://bybatkhuu.github.io/module.python-template
-repo_name: bybatkhuu/module.python-template
-repo_url: https://github.com/bybatkhuu/module.python-template
+site_name: {{cookiecutter.project_name}}
+site_description: "{{cookiecutter.project_description}}"
+site_url: https://{{cookiecutter.repo_owner}}.github.io/{{cookiecutter.repo_name}}
+repo_name: {{cookiecutter.repo_owner}}/{{cookiecutter.repo_name}}
+repo_url: https://github.com/{{cookiecutter.repo_owner}}/{{cookiecutter.repo_name}}
 theme:
   name: material
   # name: readthedocs

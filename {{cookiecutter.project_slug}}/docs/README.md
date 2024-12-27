@@ -6,7 +6,7 @@ hide:
 
 # Introduction
 
-This is a template repository for python module projects.
+{{cookiecutter.project_description}}
 
 ## ✨ Features
 
@@ -26,12 +26,12 @@ This is a template repository for python module projects.
 
 - You can use this template repository as reference to create a new repository with the same structure or clone the repository to start a new project. It will help you to organize your project structure and files. It works out of the box for most of the AI/ML projects.
 - You can customize (remove, modify or add) the files and directories as needed to meet your project requirements.
-- If you want to use the template repository directly, just click the **[Use this template](https://github.com/new?template_name=module.python-template&template_owner=bybatkhuu)** button and follow the instructions.
-- You can use **cookiecutter** to generate a new project from **[cookiecutter](https://github.com/bybatkhuu/module.python-template/tree/cookiecutter)** branch:
+- If you want to use the template repository directly, just click the **[Use this template](https://github.com/new?template_name={{cookiecutter.repo_name}}&template_owner={{cookiecutter.repo_owner}})** button and follow the instructions.
+- You can use **cookiecutter** to generate a new project from **[cookiecutter](https://github.com/{{cookiecutter.repo_owner}}/{{cookiecutter.repo_name}}/tree/cookiecutter)** branch:
 
     ```sh
     # Clone the cookiecutter branch:
-    git clone -b cookiecutter https://github.com/bybatkhuu/module.python-template.git
+    git clone -b cookiecutter https://github.com/{{cookiecutter.repo_owner}}/{{cookiecutter.repo_name}}.git
 
     # Install cookiecutter:
     pip install cookiecutter

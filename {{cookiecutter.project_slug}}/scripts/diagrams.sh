@@ -44,7 +44,7 @@ fi
 
 ## --- Variables --- ##
 # Load from envrionment variables:
-MODULE_NAME="${MODULE_NAME:-my_module01}"
+MODULE_NAME="${MODULE_NAME:-{{cookiecutter.module_name}}}"
 MODULE_DIR="${MODULE_DIR:-./src/${MODULE_NAME}}"
 OUTPUT_DIR="${OUTPUT_DIR:-./docs/diagrams}"
 
