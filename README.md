@@ -189,8 +189,8 @@ if __name__ == "__main__":
 
     # Main example code
     logger.info(f"Items before cleaning: {_items}")
-    _my_class = MyClass(items=_items, config=_config)
-    _items = _my_class()
+    _my_object = MyClass(items=_items, config=_config)
+    _items = _my_object()
     logger.info(f"Items after cleaning: {_items}")
 
     logger.info("Done!\n")
