@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=70.3.0,<80.0.0", "setuptools-scm>=8.0.4,<9.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "my_module01"
+authors = [{ name = "Batkhuu Byambajav", email = "batkhuu10@gmail.com" }]
+description = "This is a template module for python projects."
+readme = "README.md"
+requires-python = ">=3.9,<4.0"
+keywords = ["my_module01", "template", "module", "python", "package"]
+license = { file = "LICENSE.txt" }
+classifiers = [
+	"Development Status :: 4 - Beta",
+	"Intended Audience :: Developers",
+	"Topic :: Software Development :: Libraries",
+	"License :: OSI Approved :: MIT License",
+	"Operating System :: OS Independent",
+	"Programming Language :: Python :: 3",
+	"Programming Language :: Python :: 3.9",
+	"Programming Language :: Python :: 3.10",
+	"Programming Language :: Python :: 3.11",
+	"Programming Language :: Python :: 3.12",
+	"Programming Language :: Python :: 3.13",
+]
+dynamic = ["version", "dependencies", "optional-dependencies"]
+
+# [tool.setuptools.packages.find]
+# where = ["src"]
+# include = ["my_module01*"]
+# namespaces = false
+
+[tool.setuptools.dynamic]
+version = { attr = "my_module01.__version__.__version__" }
+dependencies = { file = "./requirements.txt" }
+optional-dependencies.extra = { file = [
+	"./requirements/requirements.extra.txt",
+] }
+
+[project.urls]
+Homepage = "https://github.com/bybatkhuu/module.python-template"
+Documentation = "https://bybatkhuu.github.io/module.python-template"
+Repository = "https://github.com/bybatkhuu/module.python-template.git"
+Issues = "https://github.com/bybatkhuu/module.python-template/issues"
+Changelog = "https://github.com/bybatkhuu/module.python-template/CHANGELOG.md"

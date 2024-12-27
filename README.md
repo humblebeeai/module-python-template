@@ -1,176 +1,101 @@
-# my_template
+# Python Module Template (Cookiecutter)
 
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit)
-[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/bybatkhuu/module.python-template/2.build-publish.yml?logo=GitHub)](https://github.com/bybatkhuu/module.python-template/actions/workflows/2.build-publish.yml)
-[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/bybatkhuu/module.python-template?logo=GitHub)](https://github.com/bybatkhuu/module.python-template/releases)
+This is a cookiecutter template for python module projects.
 
-`my_template` is a template for python package.
+## ✨ Features
 
-## Features
-
-- Template for python package.
-- Other features...
+- Cookiecutter
+- Python module/package
+- Project Structure
+- Boilerplate/Template
+- Best Practices
+- Configuration
+- Test
+- Build
+- Documentation
+- Scripts
+- Examples
+- CI/CD
 
 ---
 
-## Installation
+## 🐤 Getting started
 
-### 1. Prerequisites
+### 1. 🚧 Prerequisites
 
-- **Python (>= v3.7)**
-- **PyPi (>= v21)**
+- Install **Python (>= v3.9)** and **pip (>= 23)**:
+    - **[RECOMMENDED] [Miniconda (v3)](https://docs.anaconda.com/miniconda)**
+    - *[arm64/aarch64] [Miniforge (v3)](https://github.com/conda-forge/miniforge)*
+    - *[Python virutal environment] [venv](https://docs.python.org/3/library/venv.html)*
 
-### 2. Install my-template package
+For **DEVELOPMENT** environment:
 
-Choose one of the following methods to install the package **[A ~ F]**:
+- Install [**git**](https://git-scm.com/downloads)
+- Setup an [**SSH key**](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh) ([video tutorial](https://www.youtube.com/watch?v=snCP3c7wXw0))
 
-**A.** [**RECOMMENDED**] Install from **PyPi**
+### 2. 📥 Download or clone the repository
+
+**2.1.** Prepare projects directory (if not exists):
 
 ```sh
-# Install or upgrade package:
-pip install -i https://test.pypi.org/simple -U my-template
+# Create projects directory:
+mkdir -pv ~/workspaces/projects
+
+# Enter into projects directory:
+cd ~/workspaces/projects
 ```
 
-**B.** Install latest version from **GitHub**
+**2.2.** Follow one of the below options **[A]**, **[B]** or **[C]**:
+
+**OPTION A.** Clone the repository:
 
 ```sh
-# Install package by git:
-pip install git+https://github.com/bybatkhuu/module.python-template.git
+git clone https://github.com/bybatkhuu/module.python-template.git && \
+    cd module.python-template && \
+    git checkout cookiecutter
 ```
 
-**C.** Install from **pre-built release** files
-
-1. Download **`.whl`** or **`.tar.gz`** file from **releases** - <https://github.com/bybatkhuu/module.python-template/releases>
-2. Install with pip:
+**OPTION B.** Clone the repository (for **DEVELOPMENT**: git + ssh key):
 
 ```sh
-# Install from .whl file:
-pip install ./my_template-[VERSION]-py3-none-any.whl
-# Or install from .tar.gz file:
-pip install ./my_template-[VERSION].tar.gz
+git clone git@github.com:bybatkhuu/module.python-template.git && \
+    cd module.python-template && \
+    git checkout cookiecutter
 ```
 
-**D.** Install from **source code** by building package
+**OPTION C.** Download source code from cookiecutter branch.
 
-```sh
-# Clone repository by git:
-git clone https://github.com/bybatkhuu/module.python-template.git my_template
-cd ./my_template
+### 3. 📦 Install cookiecutter
 
-# Install python build tool:
-pip install -U pip build
-
-# Build python package:
-python -m build
-
-_VERSION=$(./scripts/get-version.sh)
-
-# Install from .whl file:
-pip install ./dist/my_template-${_VERSION}-py3-none-any.whl
-# Or install from .tar.gz file:
-pip install ./dist/my_template-${_VERSION}.tar.gz
-```
-
-**E.** Install with pip editable **development mode** (from source code)
-
-```sh
-# Clone repository by git:
-git clone https://github.com/bybatkhuu/module.python-template.git my_template
-cd ./my_template
-
-# Install with editable development mode:
-pip install -e .
-```
-
-**F.** Manually add to **PYTHONPATH** (not recommended)
-
-```sh
-# Clone repository by git:
-git clone https://github.com/bybatkhuu/module.python-template.git my_template
-cd ./my_template
-
-# Install python dependencies:
+```bash
+# Install cookiecutter:
+pip install -U cookiecutter
+# Or:
 pip install -r ./requirements.txt
-
-# Add current path to PYTHONPATH:
-export PYTHONPATH="${PWD}:${PYTHONPATH}"
 ```
 
-## Usage/Examples
+### 4. 🏗️ Generate project with cookiecutter
 
-To use `my_template`, import the `MyBase` class from the package:
-
-```python
-from my_template import MyBase, BaseConfig
-
-my_base = MyBase()
+```bash
+# Generate project:
+cookiecutter -f .
+# Or:
+./scripts/build.sh
 ```
 
-### **Simple**
+### 5. 🏁 Start the project
 
-[**`main.py`**](https://github.com/bybatkhuu/module.python-template/blob/main/examples/simple/main.py)
-
-```python
-import sys
-import logging
-
-from my_template import MyBase
-
-
-logging.basicConfig(stream=sys.stdout, level=logging.INFO)
-logger = logging.getLogger(__name__)
-
-
-if __name__ == "__main__":
-    _my_base = MyBase(item="item-01")
-    logger.info(f" My item => {_my_base.item}")
+```bash
+cd [PROJECT_NAME]
+# For example:
+cd module.python-template
 ```
 
-Run the [**`examples/simple`**](https://github.com/bybatkhuu/module.python-template/tree/main/examples/simple):
-
-```sh
-cd ./examples/simple
-
-python ./main.py
-```
-
-**Output**:
-
-```txt
-INFO:__main__: My item => item-01
-```
+👍
 
 ---
 
-## Running Tests
+## 📑 References
 
-To run tests, run the following command:
-
-```sh
-# Install python test dependencies:
-pip install -r ./requirements.test.txt
-
-# Run tests:
-python -m pytest -sv
-```
-
-## Environment Variables
-
-You can use the following environment variables inside [**`.env.example`**](https://github.com/bybatkhuu/module.python-template/blob/main/.env.example) file:
-
-```sh
-# ENV=development
-# DEBUG=true
-```
-
-## Documentation
-
-- [docs](https://github.com/bybatkhuu/module.python-template/blob/main/docs/README.md)
-- [scripts](https://github.com/bybatkhuu/module.python-template/blob/main/docs/scripts/README.md)
-
----
-
-## References
-
-- Python Packaging User Guide - <https://packaging.python.org>
-- Python Packaging Tutorial - <https://packaging.python.org/en/latest/tutorials/packaging-projects>
+- Cookiecutter (GitHub) - <https://github.com/cookiecutter/cookiecutter>
+- Cookiecutter (Docs) - <https://cookiecutter.readthedocs.io/en/stable>
