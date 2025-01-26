@@ -16,7 +16,7 @@ from my_module01 import MyClass
 logger = logging.getLogger(__name__)
 
 
-if __name__ == "__main__":
+def main() -> None:
     logging.basicConfig(
         stream=sys.stdout,
         level=logging.INFO,
@@ -41,4 +41,9 @@ if __name__ == "__main__":
     logger.info(f"Items after cleaning: {_items}")
 
     logger.info("Done!\n")
+    return
+
+
+if __name__ == "__main__":
+    main()
 ```
