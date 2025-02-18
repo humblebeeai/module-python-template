@@ -1,23 +1,8 @@
 # File created using '.gitignore Generator' for Visual Studio Code: https://bit.ly/vscode-gig
-# Created by https://www.toptal.com/developers/gitignore/api/zsh,windows,visualstudiocode,vim,sublimetext,pythonvanilla,python,macos,linux,jupyternotebooks,jetbrains+all,jetbrains,git,powershell
-# Edit at https://www.toptal.com/developers/gitignore?templates=zsh,windows,visualstudiocode,vim,sublimetext,pythonvanilla,python,macos,linux,jupyternotebooks,jetbrains+all,jetbrains,git,powershell
+# Created by https://www.toptal.com/developers/gitignore/api/zsh,xcode,windows,visualstudiocode,vim,sublimetext,python,powershell,macos,linux,jupyternotebooks,jetbrains+all,obsidian
+# Edit at https://www.toptal.com/developers/gitignore?templates=zsh,xcode,windows,visualstudiocode,vim,sublimetext,python,powershell,macos,linux,jupyternotebooks,jetbrains+all,obsidian
 
-### Git ###
-# Created by git for backups. To disable backups in Git:
-# $ git config --global mergetool.keepBackup false
-*.orig
-
-# Created by git when using merge tools for conflicts
-*.BACKUP.*
-*.BASE.*
-*.LOCAL.*
-*.REMOTE.*
-*_BACKUP_*.txt
-*_BASE_*.txt
-*_LOCAL_*.txt
-*_REMOTE_*.txt
-
-### JetBrains ###
+### JetBrains+all ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
@@ -96,89 +81,6 @@ fabric.properties
 # Android studio 3.1+ serialized cache file
 .idea/caches/build_file_checksums.ser
 
-### JetBrains Patch ###
-# Comment Reason: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-215987721
-
-# *.iml
-# modules.xml
-# .idea/misc.xml
-# *.ipr
-
-# Sonarlint plugin
-# https://plugins.jetbrains.com/plugin/7973-sonarlint
-.idea/**/sonarlint/
-
-# SonarQube Plugin
-# https://plugins.jetbrains.com/plugin/7238-sonarqube-community-plugin
-.idea/**/sonarIssues.xml
-
-# Markdown Navigator plugin
-# https://plugins.jetbrains.com/plugin/7896-markdown-navigator-enhanced
-.idea/**/markdown-navigator.xml
-.idea/**/markdown-navigator-enh.xml
-.idea/**/markdown-navigator/
-
-# Cache file creation bug
-# See https://youtrack.jetbrains.com/issue/JBR-2257
-.idea/$CACHE_FILE$
-
-# CodeStream plugin
-# https://plugins.jetbrains.com/plugin/12206-codestream
-.idea/codestream.xml
-
-# Azure Toolkit for IntelliJ plugin
-# https://plugins.jetbrains.com/plugin/8053-azure-toolkit-for-intellij
-.idea/**/azureSettings.xml
-
-### JetBrains+all ###
-# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
-# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
-
-# User-specific stuff
-
-# AWS User-specific
-
-# Generated files
-
-# Sensitive or high-churn files
-
-# Gradle
-
-# Gradle and Maven with auto-import
-# When using Gradle or Maven with auto-import, you should exclude module files,
-# since they will be recreated, and may cause churn.  Uncomment if using
-# auto-import.
-# .idea/artifacts
-# .idea/compiler.xml
-# .idea/jarRepositories.xml
-# .idea/modules.xml
-# .idea/*.iml
-# .idea/modules
-# *.iml
-# *.ipr
-
-# CMake
-
-# Mongo Explorer plugin
-
-# File-based project format
-
-# IntelliJ
-
-# mpeltonen/sbt-idea plugin
-
-# JIRA plugin
-
-# Cursive Clojure plugin
-
-# SonarLint plugin
-
-# Crashlytics plugin (for Android Studio and IntelliJ)
-
-# Editor-based Rest Client
-
-# Android studio 3.1+ serialized cache file
-
 ### JetBrains+all Patch ###
 # Ignore everything but code style settings and run configurations
 # that are supposed to be shared within teams.
@@ -249,6 +151,10 @@ Temporary Items
 ### macOS Patch ###
 # iCloud generated files
 *.icloud
+
+### Obsidian ###
+# config dir
+.obsidian/
 
 ### PowerShell ###
 # Exclude packaged modules
@@ -426,33 +332,6 @@ poetry.toml
 # LSP config files
 pyrightconfig.json
 
-### PythonVanilla ###
-# Byte-compiled / optimized / DLL files
-
-# C extensions
-
-# Distribution / packaging
-
-# Installer logs
-
-# Unit test / coverage reports
-
-# Translations
-
-# pyenv
-#   For a library or package, you might want to ignore these files since the code is
-#   intended to run in multiple environments; otherwise, check them in:
-# .python-version
-
-# pipenv
-#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
-#   However, in case of collaboration, if having platform-specific dependencies or dependencies
-#   having no cross-platform support, pipenv may install dependencies that don't work, or not
-#   install all needed dependencies.
-
-# PEP 582; used by e.g. github.com/David-OConnor/pyflow
-
-
 ### SublimeText ###
 # Cache files for Sublime Text
 *.tmlanguage.cache
@@ -551,6 +430,23 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+### Xcode ###
+## User settings
+xcuserdata/
+
+## Xcode 8 and earlier
+*.xcscmblueprint
+*.xccheckout
+
+### Xcode Patch ###
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcodeproj/project.xcworkspace/
+!*.xcworkspace/contents.xcworkspacedata
+/*.gcno
+**/xcshareddata/WorkspaceSettings.xcsettings
+
 ### Zsh ###
 # Zsh compiled script + zrecompile backup
 *.zwc
@@ -586,16 +482,16 @@ zsdoc/data
 /tests/_output/*
 !/tests/_output/.gitkeep
 
-# End of https://www.toptal.com/developers/gitignore/api/zsh,windows,visualstudiocode,vim,sublimetext,pythonvanilla,python,macos,linux,jupyternotebooks,jetbrains+all,jetbrains,git,powershell
+# End of https://www.toptal.com/developers/gitignore/api/zsh,xcode,windows,visualstudiocode,vim,sublimetext,python,powershell,macos,linux,jupyternotebooks,jetbrains+all,obsidian
 
 # Custom rules (everything added below won't be overriden by 'Generate .gitignore File' if you use 'Update' option)
-
 
 # Directories:
 log/
 logs/
 backup/
 backups/
+tmp/
 data/
 dataset/
 datasets/
@@ -607,6 +503,7 @@ log
 logs
 backup
 backups
+tmp
 data
 dataset
 datasets
