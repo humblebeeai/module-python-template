@@ -2,8 +2,7 @@
 
 ## 1. 📥 Download or clone the repository
 
-> [!TIP]
-> Skip this step, if you're going to install the package directly from **PyPi** or **GitHub** repository.
+[TIP] Skip this step, if you're going to install the package directly from **PyPi** or **GitHub** repository.
 
 **1.1.** Prepare projects directory (if not exists):
 
@@ -38,8 +37,7 @@ git clone git@github.com:bybatkhuu/module.python-template.git && \
 
 ### 2. 📦 Install the package
 
-> [!NOTE]
-> Choose one of the following methods to install the package **[A ~ F]**:
+[NOTE] Choose one of the following methods to install the package **[A ~ F]**:
 
 **OPTION A.** [**RECOMMENDED**] Install from **PyPi**:
 

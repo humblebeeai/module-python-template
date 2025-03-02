@@ -37,5 +37,5 @@ This is a template repository for python module projects.
     pip install cookiecutter
 
     # Generate a new project from the cookiecutter template:
-    cookiecutter -f .
+    cookiecutter -f ./module.python-template
     ```
