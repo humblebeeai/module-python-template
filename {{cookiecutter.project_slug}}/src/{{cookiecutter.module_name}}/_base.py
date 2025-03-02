@@ -136,7 +136,7 @@ class MyClass:
     def config(self, config: Union[MyClassConfigPM, Dict[str, Any]]) -> None:
         if (not isinstance(config, MyClassConfigPM)) and (not isinstance(config, dict)):
             raise TypeError(
-                f"`config` attribute type {type(config)} is invalid, must be a <class 'MyClassConfigPM'> or <dict>"
+                f"`config` attribute type {type(config)} is invalid, must be a <class 'MyClassConfigPM'> or <dict>!"
             )
 
         if isinstance(config, dict):
@@ -160,7 +160,7 @@ class MyClass:
     def items(self, items: List[float]) -> None:
         if not isinstance(items, list):
             raise TypeError(
-                f"`items` attribute type {type(items)} is invalid, must be a <class 'list'>"
+                f"`items` attribute type {type(items)} is invalid, must be a <class 'list'>!"
             )
 
         if (len(items) < self.config.min_length) or (

@@ -28,7 +28,7 @@
 ### 1. 🚧 Prerequisites
 
 - Install **Python (>= v3.9)** and **pip (>= 23)**:
-    - **[RECOMMENDED] [Miniconda (v3)](https://docs.anaconda.com/miniconda)**
+    - **[RECOMMENDED] [Miniconda (v3)](https://www.anaconda.com/docs/getting-started/miniconda/install)**
     - *[arm64/aarch64] [Miniforge (v3)](https://github.com/conda-forge/miniforge)*
     - *[Python virutal environment] [venv](https://docs.python.org/3/library/venv.html)*
 
@@ -39,8 +39,7 @@
 
 ### 2. 📥 Download or clone the repository
 
-> [!TIP]
-> Skip this step, if you're going to install the package directly from **PyPi** or **GitHub** repository.
+[TIP] Skip this step, if you're going to install the package directly from **PyPi** or **GitHub** repository.
 
 **2.1.** Prepare projects directory (if not exists):
 
@@ -75,8 +74,7 @@ git clone git@github.com:{{cookiecutter.repo_owner}}/{{cookiecutter.repo_name}}.
 
 ### 3. 📦 Install the package
 
-> [!NOTE]
-> Choose one of the following methods to install the package **[A ~ F]**:
+[NOTE] Choose one of the following methods to install the package **[A ~ F]**:
 
 **OPTION A.** [**RECOMMENDED**] Install from **PyPi**:
 
@@ -280,8 +278,8 @@ mkdocs build
 - [Test](https://github.com/{{cookiecutter.repo_owner}}/{{cookiecutter.repo_name}}/blob/main/docs/pages/dev/test.md)
 - [Build](https://github.com/{{cookiecutter.repo_owner}}/{{cookiecutter.repo_name}}/blob/main/docs/pages/dev/build.md)
 - [Docs](https://github.com/{{cookiecutter.repo_owner}}/{{cookiecutter.repo_name}}/blob/main/docs/pages/dev/docs.md)
-- [CI/CD](https://github.com/{{cookiecutter.repo_owner}}/{{cookiecutter.repo_name}}/blob/main/docs/pages/dev/cicd.md)
 - [Scripts](https://github.com/{{cookiecutter.repo_owner}}/{{cookiecutter.repo_name}}/blob/main/docs/pages/dev/scripts/README.md)
+- [CI/CD](https://github.com/{{cookiecutter.repo_owner}}/{{cookiecutter.repo_name}}/blob/main/docs/pages/dev/cicd/README.md)
 - [File Structure](https://github.com/{{cookiecutter.repo_owner}}/{{cookiecutter.repo_name}}/blob/main/docs/pages/dev/file-structure.md)
 - [Sitemap](https://github.com/{{cookiecutter.repo_owner}}/{{cookiecutter.repo_name}}/blob/main/docs/pages/dev/sitemap.md)
 - [Contributing](https://github.com/{{cookiecutter.repo_owner}}/{{cookiecutter.repo_name}}/blob/main/docs/pages/dev/contributing.md)
