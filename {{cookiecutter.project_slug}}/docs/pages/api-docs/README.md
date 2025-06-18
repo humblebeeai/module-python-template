@@ -6,4 +6,3 @@ This section provides information on the API documentation for this project.
 
 - [MyClass](./MyClass.md)
 - [MyClassConfigPM](./MyClassConfigPM.md)
-- [Diagrams](./diagrams.md)
