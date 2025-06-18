@@ -7,7 +7,7 @@ name = "my_module01"
 authors = [{ name = "Batkhuu Byambajav", email = "batkhuu10@gmail.com" }]
 description = "This is a template module for python projects."
 readme = "README.md"
-requires-python = ">=3.9,<4.0"
+requires-python = ">=3.10,<4.0"
 keywords = ["my_module01", "template", "module", "python", "package"]
 license = { file = "LICENSE.txt" }
 classifiers = [
@@ -17,7 +17,6 @@ classifiers = [
 	"License :: OSI Approved :: MIT License",
 	"Operating System :: OS Independent",
 	"Programming Language :: Python :: 3",
-	"Programming Language :: Python :: 3.9",
 	"Programming Language :: Python :: 3.10",
 	"Programming Language :: Python :: 3.11",
 	"Programming Language :: Python :: 3.12",
