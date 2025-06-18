@@ -1,5 +1,16 @@
 # Changelog
 
+## v3.0.0 (2025-06-18)
+
+<!-- Release notes generated using configuration in .github/release.yml at v3.0.0 -->
+
+## What's Changed
+### 💥 Breaking Changes
+* :boom: update Python version to 3.10 and remove base script by @bybatkhuu in https://github.com/bybatkhuu/module.python-template/pull/9
+
+
+**Full Changelog**: https://github.com/bybatkhuu/module.python-template/compare/v2.0.0...v3.0.0
+
 ## v2.0.0 (2024-12-27)
 
 <!-- Release notes generated using configuration in .github/release.yml at v2.0.0 -->
