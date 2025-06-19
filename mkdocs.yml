@@ -1,6 +1,6 @@
 site_name: My Module
 site_description: "This is a template module for python projects."
-site_url: https://bybatkhuu.github.io/module.python-template
+site_url: https://pymodule-docs.bybatkhuu.dev
 repo_name: bybatkhuu/module.python-template
 repo_url: https://github.com/bybatkhuu/module.python-template
 theme:
