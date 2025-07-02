@@ -58,7 +58,7 @@ main()
 	## --- Menu arguments --- ##
 
 
-	if [ "${_IS_BUILD}" = true ]; then
+	if [ "${_IS_BUILD}" == true ]; then
 		./scripts/build.sh
 	fi
 
