@@ -35,9 +35,6 @@ jobs:
       #     echo -e "[pypi]\nusername = __token__\npassword = ${{ secrets.PYPI_API_TOKEN }}" > ~/.pypirc
       #     ./scripts/build.sh -c -u -p
       #     rm -rfv ~/.pypirc
-      - name: Build the package
-        run: |
-          ./scripts/build.sh -c
       - name: Create release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

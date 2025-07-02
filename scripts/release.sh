@@ -59,7 +59,7 @@ main()
 
 
 	if [ "${_IS_BUILD}" == true ]; then
-		./scripts/build.sh
+		./scripts/build.sh -c
 	fi
 
 	_cur_version="$(./scripts/get-version.sh)"
