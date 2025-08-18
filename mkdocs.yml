@@ -88,8 +88,8 @@ markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
 extra_javascript:
-  - assets/js/tex-mml-chtml.js
   - assets/js/mathjax.js
+  - assets/js/tex-mml-chtml.js
 plugins:
   - meta
   - tags
