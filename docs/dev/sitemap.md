@@ -24,6 +24,7 @@ title: Sitemap
         - [test.sh](../dev/scripts/test.sh.md)
         - [bump-version.sh](../dev/scripts/bump-version.sh.md)
         - [build.sh](../dev/scripts/build.sh.md)
+        - [release.sh](../dev/scripts/release.sh.md)
         - [changelog.sh](../dev/scripts/changelog.sh.md)
         - [docs.sh](../dev/scripts/docs.sh.md)
         - [diagrams.sh](../dev/scripts/diagrams.sh.md)
