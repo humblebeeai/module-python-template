@@ -6,6 +6,17 @@ hide:
 
 # 📌 Release Notes
 
+## v3.1.1 (2025-08-20)
+
+<!-- Release notes generated using configuration in .github/release.yml at v3.1.1 -->
+
+## What's Changed
+### 💬 Other
+* Add pre-commit hooks and refine testing setup by @bybatkhuu in https://github.com/bybatkhuu/module.python-template/pull/16
+
+
+**Full Changelog**: https://github.com/bybatkhuu/module.python-template/compare/v3.1.0...v3.1.1
+
 ## v3.1.0 (2025-08-19)
 
 <!-- Release notes generated using configuration in .github/release.yml at v3.1.0 -->
