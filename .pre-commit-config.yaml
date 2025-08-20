@@ -139,7 +139,7 @@ repos:
       - id: pytest-collect
         name: "🧪 pytest-collect (local) - Validate test formatting"
         language: system
-        entry: "pytest --collect-only"
+        entry: "python -m pytest --collect-only"
         pass_filenames: false
         always_run: true
 
