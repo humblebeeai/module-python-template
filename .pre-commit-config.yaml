@@ -137,15 +137,25 @@ repos:
   - repo: local
     hooks:
       - id: pytest-collect
-        name: "🧪 pytest (collect) - Validate test formatting"
+        name: "🧪 pytest-collect (local) - Validate test formatting"
         language: system
         entry: "pytest --collect-only"
         pass_filenames: false
         always_run: true
 
       - id: pytest
-        name: "🧪 pytest - Run tests"
+        name: "🧪 pytest (local) - Run tests"
         language: system
         entry: "./scripts/test.sh -l -v -c"
+        pass_filenames: false
+        always_run: true
+
+  # --- Cleanup ---
+  - repo: local
+    hooks:
+      - id: cleanup
+        name: "🧹 cleanup (local) - Remove leftover files"
+        language: system
+        entry: "./scripts/clean.sh"
         pass_filenames: false
         always_run: true
