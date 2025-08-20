@@ -82,7 +82,7 @@ repos:
 
   # --- Security checks ---
   - repo: https://github.com/gitleaks/gitleaks
-    rev: v8.24.2
+    rev: v8.28.0
     hooks:
       - id: gitleaks
         name: "🔐 gitleaks - Detect secrets in git history"
@@ -130,7 +130,7 @@ repos:
       - id: pyright
         name: "🐍 pyright (local) - Static type checker"
         language: system
-        entry: pyright
+        entry: "python -m pyright"
         files: \.pyi?$
 
   # --- Tests ---
