@@ -21,5 +21,8 @@
 		"ISC License",
 		"Proprietary License",
 		"No License"
+	],
+	"_copy_without_render": [
+		"*.js"
 	]
 }
