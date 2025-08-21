@@ -20,6 +20,8 @@ my_module01:
 [**`.env.example`**](https://github.com/bybatkhuu/module.python-template/blob/main/.env.example):
 
 ```sh
-# ENV=development
-# DEBUG=true
+# ENV=LOCAL
+# DEBUG=false
+# TZ=UTC
+# PYTHONDONTWRITEBYTECODE=0
 ```
