@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 
-## Standard libraries
+# Standard libraries
 import sys
 import logging
 
-## Internal modules
+# Internal modules
 from my_module01 import MyClass
 
 
