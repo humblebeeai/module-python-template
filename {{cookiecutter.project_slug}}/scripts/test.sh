@@ -46,7 +46,7 @@ main()
 					_IS_VERBOSE=true
 					shift;;
 				*)
-					echo "[ERROR]: Failed to parsing input -> ${_input}"
+					echo "[ERROR]: Failed to parsing input -> ${_input}!"
 					echo "[INFO]: USAGE: ${0}  -l, --log | -c, --cov | -v, --verbose"
 					exit 1;;
 			esac
