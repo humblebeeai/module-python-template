@@ -41,7 +41,7 @@ venv = ".venv"
 
 [project.urls]
 Homepage = "https://github.com/bybatkhuu/module.python-template"
-Documentation = "https://bybatkhuu.github.io/module.python-template"
+Documentation = "https://pymodule-docs.bybatkhuu.dev"
 Repository = "https://github.com/bybatkhuu/module.python-template.git"
 Issues = "https://github.com/bybatkhuu/module.python-template/issues"
 Changelog = "https://github.com/bybatkhuu/module.python-template/blob/main/CHANGELOG.md"
