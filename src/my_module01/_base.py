@@ -1,7 +1,7 @@
 ## Standard libraries
 import pprint
 import logging
-from typing import List, Union, Dict, Any
+from typing import Any
 
 ## Third-party libraries
 from pydantic import validate_call

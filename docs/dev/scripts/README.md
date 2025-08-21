@@ -11,6 +11,7 @@ This document provides an overview and usage instructions for the following scri
 - [**`test.sh`**](./test.sh.md)
 - [**`bump-version.sh`**](./bump-version.sh.md)
 - [**`build.sh`**](./build.sh.md)
+- [**`release.sh`**](./release.sh.md)
 - [**`changelog.sh`**](./changelog.sh.md)
 - [**`docs.sh`**](./docs.sh.md)
 - [**`diagrams.sh`**](./diagrams.sh.md)
@@ -26,6 +27,7 @@ scripts/
 ├── diagrams.sh
 ├── docs.sh
 ├── get-version.sh
+├── release.sh
 └── test.sh
 ```
 
