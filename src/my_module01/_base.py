@@ -72,14 +72,14 @@ class MyClass:
         """Method to clean the items based on the threshold value.
 
         Args:
-            items     (Union[List[float], None], optional): List of float items to be processed. Defaults to None.
-            threshold (Union[float, None]      , optional): Threshold value for the cleaning process. Defaults to None.
+            items     (list[float], None, optional): List of float items to be processed. Defaults to None.
+            threshold (float, None      , optional): Threshold value for the cleaning process. Defaults to None.
 
         Raises:
             RuntimeError: If `items` attribute is not set.
 
         Returns:
-            List[float]: List of cleaned items.
+            list[float]: List of cleaned items.
         """
 
         if items:
@@ -112,11 +112,11 @@ class MyClass:
         """Wrapper method for the __call__ method.
 
         Args:
-            items     (Union[List[float], None], optional): List of float items to be processed. Defaults to None.
-            threshold (Union[float, None]      , optional): Threshold value for the cleaning process. Defaults to None.
+            items     (list[float], None, optional): List of float items to be processed. Defaults to None.
+            threshold (float, None      , optional): Threshold value for the cleaning process. Defaults to None.
 
         Returns:
-            List[float]: List of cleaned items.
+            list[float]: List of cleaned items.
         """
 
         return self.__call__(items=items, threshold=threshold)
