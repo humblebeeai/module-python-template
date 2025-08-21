@@ -1,9 +1,7 @@
-# -*- coding: utf-8 -*-
-
 ## Standard libraries
 import pprint
 import logging
-from typing import List, Union, Dict, Any
+from typing import Any
 
 ## Third-party libraries
 from pydantic import validate_call
@@ -27,13 +25,14 @@ class MyClass:
     Methods:
         __call__ (): Method to clean the items based on the threshold value.
         run      (): Method to clean the items based on the threshold value.
+
     """
 
     @validate_call
     def __init__(
         self,
-        items: Union[List[float], None] = None,
-        config: Union[MyClassConfigPM, Dict[str, Any], None] = None,
+        items: list[float] | None = None,
+        config: MyClassConfigPM | dict[str, Any] | None = None,
         auto_run: bool = False,
         **kwargs,
     ) -> None:
@@ -66,9 +65,9 @@ class MyClass:
     @validate_call
     def __call__(
         self,
-        items: Union[List[float], None] = None,
-        threshold: Union[float, None] = None,
-    ) -> List[float]:
+        items: list[float] | None = None,
+        threshold: float | None = None,
+    ) -> list[float]:
         """Method to clean the items based on the threshold value.
 
         Args:
@@ -106,9 +105,9 @@ class MyClass:
     @validate_call
     def run(
         self,
-        items: Union[List[float], None] = None,
-        threshold: Union[float, None] = None,
-    ) -> List[float]:
+        items: list[float] | None = None,
+        threshold: float | None = None,
+    ) -> list[float]:
         """Wrapper method for the __call__ method.
 
         Args:
@@ -133,7 +132,7 @@ class MyClass:
         return self.__config
 
     @config.setter
-    def config(self, config: Union[MyClassConfigPM, Dict[str, Any]]) -> None:
+    def config(self, config: MyClassConfigPM | dict[str, Any]) -> None:
         if (not isinstance(config, MyClassConfigPM)) and (not isinstance(config, dict)):
             raise TypeError(
                 f"`config` attribute type {type(config)} is invalid, must be a <class 'MyClassConfigPM'> or <dict>!"
@@ -150,14 +149,14 @@ class MyClass:
 
     ## items ##
     @property
-    def items(self) -> List[float]:
+    def items(self) -> list[float]:
         try:
             return self.__items
         except AttributeError:
             raise AttributeError("`items` attribute is not set!")
 
     @items.setter
-    def items(self, items: List[float]) -> None:
+    def items(self, items: list[float]) -> None:
         if not isinstance(items, list):
             raise TypeError(
                 f"`items` attribute type {type(items)} is invalid, must be a <class 'list'>!"

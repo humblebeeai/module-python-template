@@ -1,0 +1,4 @@
+nav:
+  - MyClass: MyClass.md
+  - MyClassConfigPM: MyClassConfigPM.md
+  # - "*"
