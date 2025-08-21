@@ -1,4 +1,6 @@
+# flake8: noqa
+
 try:
-    from .src.{{cookiecutter.module_name}} import *  # noqa: F403,F401
+    from .src.{{cookiecutter.module_name}} import *
 except ImportError:
-    from src.{{cookiecutter.module_name}} import *  # noqa: F403,F401
+    from src.{{cookiecutter.module_name}} import *
