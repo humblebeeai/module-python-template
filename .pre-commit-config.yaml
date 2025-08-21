@@ -24,7 +24,7 @@ repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v6.0.0
     hooks:
-      # Common File Checks
+      # Common Checks
       - id: check-json
         name: "📄 check-json - Validate JSON files"
         files: \.json$
