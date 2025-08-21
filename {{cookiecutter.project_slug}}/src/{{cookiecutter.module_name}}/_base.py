@@ -1,12 +1,12 @@
-## Standard libraries
+# Standard libraries
 import pprint
 import logging
 from typing import Any
 
-## Third-party libraries
+# Third-party libraries
 from pydantic import validate_call
 
-## Internal modules
+# Internal modules
 from .__version__ import __version__
 from . import _utils as utils
 from .config import MyClassConfigPM
@@ -39,8 +39,9 @@ class MyClass:
         """Initializer method for the MyClass class.
 
         Args:
-            items  (Union[List[float], None]                    , optional): List of float items to be processed. Defaults to None.
-            config (Union[MyClassConfigPM, Dict[str, Any], None], optional): Configuration for the module. Defaults to None.
+            items  (list[float], None]                     , optional): List of float items to be processed.
+                                                                            Defaults to None.
+            config (MyClassConfigPM | dict[str, Any] | None, optional): Configuration for the module. Defaults to None.
         """
 
         logger.debug(
@@ -71,14 +72,14 @@ class MyClass:
         """Method to clean the items based on the threshold value.
 
         Args:
-            items     (Union[List[float], None], optional): List of float items to be processed. Defaults to None.
-            threshold (Union[float, None]      , optional): Threshold value for the cleaning process. Defaults to None.
+            items     (list[float] | None, optional): List of float items to be processed. Defaults to None.
+            threshold (float | None      , optional): Threshold value for the cleaning process. Defaults to None.
 
         Raises:
             RuntimeError: If `items` attribute is not set.
 
         Returns:
-            List[float]: List of cleaned items.
+            list[float]: List of cleaned items.
         """
 
         if items:
@@ -111,17 +112,17 @@ class MyClass:
         """Wrapper method for the __call__ method.
 
         Args:
-            items     (Union[List[float], None], optional): List of float items to be processed. Defaults to None.
-            threshold (Union[float, None]      , optional): Threshold value for the cleaning process. Defaults to None.
+            items     (list[float] | None, optional): List of float items to be processed. Defaults to None.
+            threshold (float, None       , optional): Threshold value for the cleaning process. Defaults to None.
 
         Returns:
-            List[float]: List of cleaned items.
+            list[float]: List of cleaned items.
         """
 
         return self.__call__(items=items, threshold=threshold)
 
-    ### ATTRIBUTES ###
-    ## config ##
+    # ATTRIBUTES
+    # config
     @property
     def config(self) -> MyClassConfigPM:
         try:
@@ -145,9 +146,9 @@ class MyClass:
 
         self.__config = config
 
-    ## config ##
+    # config
 
-    ## items ##
+    # items
     @property
     def items(self) -> list[float]:
         try:
@@ -166,7 +167,8 @@ class MyClass:
             self.config.max_length < len(items)
         ):
             raise ValueError(
-                f"`items` attribute length '{len(items)}' is too short or too long, must be between '{self.config.min_length}' and '{self.config.max_length}'!"
+                f"`items` attribute length '{len(items)}' is too short or too long, "
+                f"must be between '{self.config.min_length}' and '{self.config.max_length}'!"
             )
 
         for _item in items:
@@ -177,15 +179,16 @@ class MyClass:
 
             if (_item < self.config.min_value) or (self.config.max_value < _item):
                 raise ValueError(
-                    f"`items` attribute item value '{_item}' is not in the allowed range, must be between '{self.config.min_value}' and '{self.config.max_value}'!"
+                    f"`items` attribute item value '{_item}' is not in the allowed range, "
+                    f"must be between '{self.config.min_value}' and '{self.config.max_value}'!"
                 )
 
         self.__items = items
 
-    ## items ##
-    ### ATTRIBUTES ###
+    # items
+    # ATTRIBUTES
 
-    ## METHOD OVERRIDING ##
+    # METHOD OVERRIDING
     def __str__(self):
         _self_dict = utils.clean_obj_dict(self.__dict__, self.__class__.__name__)
         _self_str = f"{self.__class__.__name__}: {pprint.pformat(_self_dict)}"
@@ -195,7 +198,7 @@ class MyClass:
         _self_repr = utils.obj_to_repr(self)
         return _self_repr
 
-    ## METHOD OVERRIDING ##
+    # METHOD OVERRIDING
 
 
 __all__ = ["MyClass"]

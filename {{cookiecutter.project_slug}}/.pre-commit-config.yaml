@@ -4,11 +4,13 @@ default_language_version:
 exclude: |
   (?x)^(
       \.git/
-    | __pycache__/
     | \.benchmarks/
     | \.pytest_cache/
+    | \.coverage
     | \.venv/
     | \.env/
+    | \*.egg-info/
+    | __pycache__/
     | venv/
     | env/
     | build/
@@ -16,7 +18,7 @@ exclude: |
     | site/
     | site-packages/
     | node_modules/
-    | .coverage
+    | logs/
   )$
 
 repos:
@@ -102,6 +104,13 @@ repos:
         files: \.sh$
 
   # --- Python ---
+  - repo: https://github.com/psf/black
+    rev: 25.1.0
+    hooks:
+      - id: black
+        name: "🐍 black - Format python code"
+        files: \.pyi?$
+
   - repo: https://github.com/asottile/pyupgrade
     rev: v3.20.0
     hooks:
@@ -110,12 +119,13 @@ repos:
         entry: "pyupgrade --py310-plus"
         files: \.pyi?$
 
-  - repo: https://github.com/psf/black
-    rev: 25.1.0
+  - repo: https://github.com/PyCQA/flake8
+    rev: 7.3.0
     hooks:
-      - id: black
-        name: "🐍 black - Format python code"
+      - id: flake8
+        name: "🐍 flake8 - Lint python code"
         files: \.pyi?$
+        args: ["--max-line-length=120"]
 
   - repo: https://github.com/PyCQA/bandit
     rev: 1.8.6
