@@ -39,7 +39,7 @@ class MyClass:
         """Initializer method for the MyClass class.
 
         Args:
-            items  (list[float], None]                     , optional): List of float items to be processed.
+            items  (list[float] | None                     , optional): List of float items to be processed.
                                                                             Defaults to None.
             config (MyClassConfigPM | dict[str, Any] | None, optional): Configuration for the module. Defaults to None.
         """
@@ -113,7 +113,7 @@ class MyClass:
 
         Args:
             items     (list[float] | None, optional): List of float items to be processed. Defaults to None.
-            threshold (float, None       , optional): Threshold value for the cleaning process. Defaults to None.
+            threshold (float | None      , optional): Threshold value for the cleaning process. Defaults to None.
 
         Returns:
             list[float]: List of cleaned items.
