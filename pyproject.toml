@@ -35,6 +35,10 @@ optional-dependencies.extra = { file = [
 	"./requirements/requirements.extra.txt",
 ] }
 
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
+
 [project.urls]
 Homepage = "https://github.com/bybatkhuu/module.python-template"
 Documentation = "https://bybatkhuu.github.io/module.python-template"
