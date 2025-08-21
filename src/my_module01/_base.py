@@ -72,8 +72,8 @@ class MyClass:
         """Method to clean the items based on the threshold value.
 
         Args:
-            items     (list[float], None, optional): List of float items to be processed. Defaults to None.
-            threshold (float, None      , optional): Threshold value for the cleaning process. Defaults to None.
+            items     (list[float] | None, optional): List of float items to be processed. Defaults to None.
+            threshold (float | None      , optional): Threshold value for the cleaning process. Defaults to None.
 
         Raises:
             RuntimeError: If `items` attribute is not set.
@@ -112,8 +112,8 @@ class MyClass:
         """Wrapper method for the __call__ method.
 
         Args:
-            items     (list[float], None, optional): List of float items to be processed. Defaults to None.
-            threshold (float, None      , optional): Threshold value for the cleaning process. Defaults to None.
+            items     (list[float] | None, optional): List of float items to be processed. Defaults to None.
+            threshold (float | None      , optional): Threshold value for the cleaning process. Defaults to None.
 
         Returns:
             list[float]: List of cleaned items.
