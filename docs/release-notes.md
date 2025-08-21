@@ -6,6 +6,17 @@ hide:
 
 # 📌 Release Notes
 
+## v3.1.2 (2025-08-21)
+
+<!-- Release notes generated using configuration in .github/release.yml at v3.1.2 -->
+
+## What's Changed
+### 🐛 Fixes
+* Refactor and improve type hints in MyClass by @bybatkhuu in https://github.com/bybatkhuu/module.python-template/pull/17
+
+
+**Full Changelog**: https://github.com/bybatkhuu/module.python-template/compare/v3.1.1...v3.1.2
+
 ## v3.1.1 (2025-08-20)
 
 <!-- Release notes generated using configuration in .github/release.yml at v3.1.1 -->
