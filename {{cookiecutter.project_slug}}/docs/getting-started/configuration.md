@@ -20,6 +20,8 @@ title: Configuration
 [**`.env.example`**](https://github.com/{{cookiecutter.repo_owner}}/{{cookiecutter.repo_name}}/blob/main/.env.example):
 
 ```sh
-# ENV=development
-# DEBUG=true
+# ENV=LOCAL
+# DEBUG=false
+# TZ=UTC
+# PYTHONDONTWRITEBYTECODE=0
 ```
