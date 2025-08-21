@@ -4,6 +4,7 @@
 	"project_description": "This is a short description of the project.",
 	"module_name": "module_name",
 	"domain": "example.com",
+	"docs_domain": "docs.{{cookiecutter.domain}}",
 	"author_username": "username",
 	"author_fullname": "Full Name",
 	"author_email": "user@{{cookiecutter.domain}}",
