@@ -61,7 +61,7 @@ main()
 
 
 	if [ -z "${_BUMP_TYPE:-}" ]; then
-		echo "[ERROR]: Bump type is empty! Use '-b=' or '--bump-type=' argument."
+		echo "[ERROR]: Bump type is empty, use '-b=' or '--bump-type=' argument!"
 		exit 1
 	fi
 
