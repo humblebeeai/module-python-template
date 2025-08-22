@@ -137,11 +137,11 @@ repos:
         args: ["--skip=B101"] # skip assert-use warning
 
   # --- Cleanup ---
-  - repo: local
-    hooks:
-      - id: cleanup
-        name: "🧹 cleanup (local) - Remove leftover files"
-        language: system
-        entry: "./scripts/clean.sh"
-        pass_filenames: false
-        always_run: true
+  # - repo: local
+  #   hooks:
+  #     - id: cleanup
+  #       name: "🧹 cleanup (local) - Remove leftover files"
+  #       language: system
+  #       entry: "./scripts/clean.sh"
+  #       pass_filenames: false
+  #       always_run: true
