@@ -35,9 +35,9 @@ optional-dependencies.extra = { file = [
 	"./requirements/requirements.extra.txt",
 ] }
 
-[tool.pyright]
-venvPath = "."
-venv = ".venv"
+# [tool.pyright]
+# venvPath = "."
+# venv = ".venv"
 
 [project.urls]
 Homepage = "https://github.com/{{cookiecutter.repo_owner}}/{{cookiecutter.repo_name}}"
