@@ -1,7 +1,4 @@
-from dotenv import load_dotenv
 from pydantic import BaseModel, Field, ConfigDict
-
-load_dotenv(override=True)
 
 
 class ExtraBaseModel(BaseModel):
