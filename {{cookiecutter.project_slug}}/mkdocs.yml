@@ -6,7 +6,7 @@ repo_url: https://github.com/{{cookiecutter.repo_owner}}/{{cookiecutter.repo_nam
 theme:
   name: material
   # name: readthedocs
-  language: en
+  language: {{cookiecutter.language}}
   font:
     text: Roboto
     code: Roboto Mono
