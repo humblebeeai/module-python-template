@@ -19,7 +19,7 @@ class MyClass:
     """A class to perform some operations on a list of float items.
 
     Attributes:
-        items  (List[float]    ): List of float items to be processed.
+        items  (list[float]    ): List of float items to be processed.
         config (MyClassConfigPM): Configuration for the module.
 
     Methods:
