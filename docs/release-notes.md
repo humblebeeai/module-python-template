@@ -6,6 +6,14 @@ hide:
 
 # 📌 Release Notes
 
+## v3.1.4 (2025-08-23)
+
+<!-- Release notes generated using configuration in .github/release.yml at v3.1.4 -->
+
+
+
+**Full Changelog**: https://github.com/bybatkhuu/module.python-template/compare/v3.1.3...v3.1.4
+
 ## v3.1.3 (2025-08-23)
 
 <!-- Release notes generated using configuration in .github/release.yml at v3.1.3 -->
