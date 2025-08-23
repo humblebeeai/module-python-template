@@ -148,11 +148,11 @@ cp -r ./src/{{cookiecutter.module_name}} /some/path/project/
 [**`examples/simple/main.py`**](https://github.com/{{cookiecutter.repo_owner}}/{{cookiecutter.repo_name}}/blob/main/examples/simple/main.py):
 
 ```python
-## Standard libraries
+# Standard libraries
 import sys
 import logging
 
-## Internal modules
+# Internal modules
 from {{cookiecutter.module_name}} import MyClass
 
 
