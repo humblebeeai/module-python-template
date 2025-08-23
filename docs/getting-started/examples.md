@@ -9,11 +9,11 @@ title: Examples
 [**`examples/simple/main.py`**](https://github.com/bybatkhuu/module.python-template/blob/main/examples/simple/main.py):
 
 ```python
-## Standard libraries
+# Standard libraries
 import sys
 import logging
 
-## Internal modules
+# Internal modules
 from my_module01 import MyClass
 
 
