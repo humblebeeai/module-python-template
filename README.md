@@ -153,7 +153,7 @@ cp -r ./src/my_module01 /some/path/project/
 
 ### Simple
 
-[**`examples/simple/main.py`**](https://github.com/bybatkhuu/module.python-template/blob/main/examples/simple/main.py):
+[**`examples/simple/main.py`**](./examples/simple/main.py):
 
 ```python
 # Standard libraries
@@ -205,7 +205,7 @@ if __name__ == "__main__":
 
 ## ⚙️ Configuration
 
-[**`templates/configs/config.yml`**](https://github.com/bybatkhuu/module.python-template/blob/main/templates/configs/config.yml):
+[**`templates/configs/config.yml`**](./templates/configs/config.yml):
 
 ```yaml
 my_module01:
@@ -218,7 +218,7 @@ my_module01:
 
 ### 🌎 Environment Variables
 
-[**`.env.example`**](https://github.com/bybatkhuu/module.python-template/blob/main/.env.example):
+[**`.env.example`**](./.env.example):
 
 ```sh
 # ENV=LOCAL
@@ -278,7 +278,7 @@ mkdocs build
 
 ## 📚 Documentation
 
-- [Docs](https://github.com/bybatkhuu/module.python-template/blob/main/docs)
+- [Docs](./docs)
 
 ---
 
