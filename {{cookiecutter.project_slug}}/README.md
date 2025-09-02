@@ -145,7 +145,7 @@ cp -r ./src/{{cookiecutter.module_name}} /some/path/project/
 
 ### Simple
 
-[**`examples/simple/main.py`**](https://github.com/{{cookiecutter.repo_owner}}/{{cookiecutter.repo_name}}/blob/main/examples/simple/main.py):
+[**`examples/simple/main.py`**](./examples/simple/main.py):
 
 ```python
 # Standard libraries
@@ -197,7 +197,7 @@ if __name__ == "__main__":
 
 ## ⚙️ Configuration
 
-[**`templates/configs/config.yml`**](https://github.com/{{cookiecutter.repo_owner}}/{{cookiecutter.repo_name}}/blob/main/templates/configs/config.yml):
+[**`templates/configs/config.yml`**](./templates/configs/config.yml):
 
 ```yaml
 {{cookiecutter.module_name}}:
@@ -210,7 +210,7 @@ if __name__ == "__main__":
 
 ### 🌎 Environment Variables
 
-[**`.env.example`**](https://github.com/{{cookiecutter.repo_owner}}/{{cookiecutter.repo_name}}/blob/main/.env.example):
+[**`.env.example`**](./.env.example):
 
 ```sh
 # ENV=LOCAL
@@ -270,7 +270,7 @@ mkdocs build
 
 ## 📚 Documentation
 
-- [Docs](https://github.com/{{cookiecutter.repo_owner}}/{{cookiecutter.repo_name}}/blob/main/docs)
+- [Docs](./docs)
 
 ---
 
