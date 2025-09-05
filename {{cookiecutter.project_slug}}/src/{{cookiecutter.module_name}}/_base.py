@@ -23,8 +23,7 @@ class MyClass:
         config (MyClassConfigPM): Configuration for the module.
 
     Methods:
-        __call__ (): Method to clean the items based on the threshold value.
-        run      (): Method to clean the items based on the threshold value.
+        run(): Method to clean the items based on the threshold value.
 
     """
 
@@ -61,10 +60,10 @@ class MyClass:
         )
 
         if auto_run:
-            self.__call__()
+            self.run()
 
     @validate_call
-    def __call__(
+    def run(
         self,
         items: list[float] | None = None,
         threshold: float | None = None,
@@ -102,24 +101,6 @@ class MyClass:
 
         self.items = _clean_items
         return self.items
-
-    @validate_call
-    def run(
-        self,
-        items: list[float] | None = None,
-        threshold: float | None = None,
-    ) -> list[float]:
-        """Wrapper method for the __call__ method.
-
-        Args:
-            items     (list[float] | None, optional): List of float items to be processed. Defaults to None.
-            threshold (float | None      , optional): Threshold value for the cleaning process. Defaults to None.
-
-        Returns:
-            list[float]: List of cleaned items.
-        """
-
-        return self.__call__(items=items, threshold=threshold)
 
     # ATTRIBUTES
     # config
