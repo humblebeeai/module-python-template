@@ -97,6 +97,11 @@ class MyClass:
         for _item in self.items:
             if threshold <= _item:
                 _clean_items.append(_item)
+            else:
+                logger.debug(
+                    f"Item '{_item}' is below the threshold '{threshold}', removing it..."
+                )
+
         logger.debug("Successfully cleaned items.")
 
         self.items = _clean_items

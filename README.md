@@ -224,7 +224,6 @@ my_module01:
 # ENV=LOCAL
 # DEBUG=false
 # TZ=UTC
-# PYTHONDONTWRITEBYTECODE=0
 ```
 
 ---
