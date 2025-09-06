@@ -6,6 +6,17 @@ hide:
 
 # 📌 Release Notes
 
+## v3.2.0 (2025-09-06)
+
+<!-- Release notes generated using configuration in .github/release.yml at v3.2.0 -->
+
+## What's Changed
+### ✨ Features
+* :sparkles: Clean up configuration and remove unused MyClassConfigPM d… by @bybatkhuu in https://github.com/bybatkhuu/module.python-template/pull/18
+
+
+**Full Changelog**: https://github.com/bybatkhuu/module.python-template/compare/v3.1.4...v3.2.0
+
 ## v3.1.4 (2025-08-23)
 
 <!-- Release notes generated using configuration in .github/release.yml at v3.1.4 -->
