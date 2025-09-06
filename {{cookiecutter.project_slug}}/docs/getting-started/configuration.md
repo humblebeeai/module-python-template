@@ -23,5 +23,4 @@ title: Configuration
 # ENV=LOCAL
 # DEBUG=false
 # TZ=UTC
-# PYTHONDONTWRITEBYTECODE=0
 ```

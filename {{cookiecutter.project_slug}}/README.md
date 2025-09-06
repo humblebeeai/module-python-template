@@ -216,7 +216,6 @@ if __name__ == "__main__":
 # ENV=LOCAL
 # DEBUG=false
 # TZ=UTC
-# PYTHONDONTWRITEBYTECODE=0
 ```
 
 ---
