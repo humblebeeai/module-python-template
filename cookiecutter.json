@@ -3,6 +3,8 @@
 	"project_slug": "module.python-template",
 	"project_description": "This is a short description of the project.",
 	"module_name": "module_name",
+	"project_abbr": "pmt",
+	"env_prefix": "{{cookiecutter.project_abbr.upper().replace('-', '_')}}_",
 	"domain": "example.com",
 	"docs_domain": "docs.{{cookiecutter.domain}}",
 	"author_username": "username",
