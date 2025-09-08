@@ -13,8 +13,6 @@ title: Sitemap
     - [Error Codes](../getting-started/error-codes.md)
 - API Documentation
     - [MyClass](../api-docs/MyClass.md)
-    - [MyClassConfigPM](../api-docs/MyClassConfigPM.md)
-- Development
     - [Test](../dev/test.md)
     - [Build](../dev/build.md)
     - [Docs](../dev/docs.md)
