@@ -4,24 +4,26 @@
       <div class="mermaid">
 
         classDiagram
-          class ExtraBaseModel {
-            model_config : ConfigDict
-          }
           class MyClass {
             config
             items
-            run(items: Union[List[float], None], threshold: Union[float, None]) List[float]
+            run(items: list[float] | None, threshold: float | None) list[float]
+          }
+          class MyClassCliConfig {
+            items : Optional[list[float]]
+            model_config : SettingsConfigDict
+            settings_customise_sources(settings_cls: type[BaseSettings], init_settings: PydanticBaseSettingsSource, env_settings: PydanticBaseSettingsSource, dotenv_settings: PydanticBaseSettingsSource, file_secret_settings: PydanticBaseSettingsSource) tuple[PydanticBaseSettingsSource, ...]
           }
           class MyClassConfigPM {
             max_length : Optional[int]
             max_value : Optional[float]
             min_length : Optional[int]
             min_value : Optional[float]
+            model_config : ConfigDict
             threshold : Optional[float]
           }
-          MyClassConfigPM --|> ExtraBaseModel
+          MyClassCliConfig --|> MyClassConfigPM
           MyClassConfigPM --* MyClass : config
-          MyClassConfigPM --* MyClass : __config
 
        </div>
   </body>
