@@ -18,6 +18,7 @@ exclude: |
     | site/
     | site-packages/
     | node_modules/
+    | docs/diagrams/
     | logs/
   )$
 
