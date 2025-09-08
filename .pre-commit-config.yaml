@@ -3,19 +3,19 @@ default_language_version:
   python: python3.10
 exclude: |
   (?x)^(
-      \.git/
+      \.git/.*
     | .*\{\{.*\}\}.*
-    | \.venv/
-    | \.env/
-    | __pycache__/
-    | venv/
-    | env/
-    | build/
-    | dist/
-    | site/
-    | site-packages/
-    | node_modules/
-    | logs/
+    | \.venv/.*
+    | \.env/.*
+    | __pycache__/.*
+    | venv/.*
+    | env/.*
+    | build/.*
+    | dist/.*
+    | site/.*
+    | site-packages/.*
+    | node_modules/.*
+    | logs/.*
   )$
 
 repos:
