@@ -22,7 +22,10 @@ exclude: |
     | log/.*
     | logs/.*
     | data/.*
+    | dataset/.*
     | datasets/.*
+    | backup/.*
+    | backups/.*
     | tmp/.*
   )$
 
