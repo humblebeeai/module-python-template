@@ -510,6 +510,5 @@ datasets
 .benchmarks
 module.python-template
 *.bak
-version.py
 example.py
 test.py
