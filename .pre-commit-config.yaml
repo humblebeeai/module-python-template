@@ -15,7 +15,11 @@ exclude: |
     | site/.*
     | site-packages/.*
     | node_modules/.*
+    | log/.*
     | logs/.*
+    | data/.*
+    | datasets/.*
+    | tmp/.*
   )$
 
 repos:
