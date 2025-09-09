@@ -508,6 +508,5 @@ dataset
 datasets
 .benchmarks
 *.bak
-version.py
 example.py
 test.py
