@@ -12,6 +12,8 @@ project/
 ├── .vscode/                # VSCode specific files
 |   ├── extensions.json         # Recommended extensions for the workspace
 |   └── settings.json           # Common VSCode settings for the workspace (e.g. formatting, linting, etc...)
+├── build/                  # Build files and directories (SHOULD NOT BE COMMITTED TO REPOSITORY)
+├── dist/                   # Built distributions of this project (SHOULD NOT BE COMMITTED TO REPOSITORY)
 ├── docs/                   # Documentation of this project
 |   ├── assets/                 # Any assets (images, audios, videos, js, css, html, etc...) used for the documentation
 |   ├── diagrams/               # Diagrams related to this project
@@ -20,14 +22,16 @@ project/
 ├── examples/               # Example source codes of this project
 ├── requirements/           # Python dependency requirements for different environments
 ├── scripts/                # Helpful scripts to automate tasks or assist in the development process
-├── {{cookiecutter.module_name}}/            # Main CODEBASE of this project as a python module
+├── site/                   # Built static site of the documentation (SHOULD NOT BE COMMITTED TO REPOSITORY)
+├── src/                    # Source codes of this project
 |   ├── modules/                # External modules for this project
 |   |   ├── module_1/
 |   |   ├── module_2/
 |   |   └── .../
-|   ├── __init__.py             # Initialize the module to be used as a package
-|   ├── __version__.py          # Version of the module (should be updated and used with each release)
-|   └── ...                     # Other main python files of this module
+|   └── {{cookiecutter.module_name}}/            # Main CODEBASE of this project as a python module
+|       ├── __init__.py             # Initialize the module to be used as a package
+|       ├── __version__.py          # Version of the module (should be updated and used with each release)
+|       └── ...                     # Other main python files of this module
 ├── templates/              # Template files (if any, e.g. config files, etc...) used in this project
 ├── tests/                  # Tests for this project
 |   ├── __init__.py             # Initialize the test module
@@ -37,6 +41,7 @@ project/
 |   └── ...
 ├── __init__.py             # Initialize the whole project as a python module to import from other modules
 ├── .editorconfig           # Editor configuration for consistent coding styles for different editors
+├── .env                    # Environment variables file (SHOULD NOT BE COMMITTED TO REPOSITORY)
 ├── .env.example            # Example environment variables file
 ├── .gitignore              # Files and directories to be ignored by git (e.g. data, models, results, etc...)
 ├── .markdownlint.json      # Markdown linting rules
