@@ -113,7 +113,7 @@ pip install -e .
 **OPTION D.** Install for **DEVELOPMENT** environment:
 
 ```sh
-pip install -r ./requirements/requirements.dev.txt
+pip install -e .[dev]
 ```
 
 **OPTION E.** Install from **pre-built release** files:
@@ -226,7 +226,7 @@ To run tests, run the following command:
 
 ```sh
 # Install python test dependencies:
-pip install -r ./requirements/requirements.test.txt
+pip install -e .[dev]
 
 # Run tests:
 python -m pytest -sv -o log_cli=true
