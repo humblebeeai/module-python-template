@@ -1,5 +1,18 @@
 # Changelog
 
+## v3.2.1 (2025-09-17)
+
+<!-- Release notes generated using configuration in .github/release.yml at v3.2.1 -->
+
+## What's Changed
+### 📝 Documentation
+* :technologist: Refactor dependency installation and update requiremen… by @bybatkhuu in https://github.com/bybatkhuu/module.python-template/pull/20
+### 📦 Dependencies
+* ⬆️ Update pytest-cov requirement from <7.0.0,>=5.0.0 to >=5.0.0,<8.0.0 by @dependabot[bot] in https://github.com/bybatkhuu/module.python-template/pull/19
+
+
+**Full Changelog**: https://github.com/bybatkhuu/module.python-template/compare/v3.2.0...v3.2.1
+
 ## v3.2.0 (2025-09-06)
 
 <!-- Release notes generated using configuration in .github/release.yml at v3.2.0 -->
