@@ -72,7 +72,7 @@ pip install -e .
 **OPTION D.** Install for **DEVELOPMENT** environment:
 
 ```sh
-pip install -r ./requirements/requirements.dev.txt
+pip install -e .[dev]
 ```
 
 **OPTION E.** Install from **pre-built release** files:
