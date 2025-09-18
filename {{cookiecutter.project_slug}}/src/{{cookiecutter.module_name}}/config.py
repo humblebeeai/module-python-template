@@ -27,7 +27,7 @@ class MyClassConfigPM(BaseModel):
     model_config = ConfigDict(extra="allow")
 
 
-ENV_PREFIX = "{{cookiecutter.env_prefix}}"
+ENV_PREFIX = "PMT_"
 
 
 # Pydantic Cli Config
