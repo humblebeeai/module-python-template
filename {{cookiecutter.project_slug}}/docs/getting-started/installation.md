@@ -47,10 +47,10 @@ git clone git@github.com:{{cookiecutter.repo_owner}}/{{cookiecutter.repo_name}}.
 
 ```sh
 # Install from staging TestPyPi:
-pip install -i https://test.pypi.org/simple -U {{cookiecutter.module_name}}
+pip install -i https://test.pypi.org/simple -U {{cookiecutter.module_name.replace('_', '-')}}
 
 # Or install from production PyPi:
-# pip install -U {{cookiecutter.module_name}}
+# pip install -U {{cookiecutter.module_name.replace('_', '-')}}
 ```
 
 **OPTION B.** Install latest version directly from **GitHub** repository:
@@ -72,7 +72,7 @@ pip install -e .
 **OPTION D.** Install for **DEVELOPMENT** environment:
 
 ```sh
-pip install -r ./requirements/requirements.dev.txt
+pip install -e .[dev]
 ```
 
 **OPTION E.** Install from **pre-built release** files:

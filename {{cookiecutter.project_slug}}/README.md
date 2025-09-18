@@ -88,10 +88,10 @@ git clone git@github.com:{{cookiecutter.repo_owner}}/{{cookiecutter.repo_name}}.
 
 ```sh
 # Install from staging TestPyPi:
-pip install -i https://test.pypi.org/simple -U {{cookiecutter.module_name}}
+pip install -i https://test.pypi.org/simple -U {{cookiecutter.module_name.replace('_', '-')}}
 
 # Or install from production PyPi:
-# pip install -U {{cookiecutter.module_name}}
+# pip install -U {{cookiecutter.module_name.replace('_', '-')}}
 ```
 
 **OPTION B.** Install latest version directly from **GitHub** repository:
@@ -226,7 +226,7 @@ To run tests, run the following command:
 
 ```sh
 # Install python test dependencies:
-pip install -e .[dev]
+pip install .[test]
 
 # Run tests:
 python -m pytest -sv -o log_cli=true
