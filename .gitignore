@@ -496,7 +496,7 @@ data/
 dataset/
 datasets/
 .benchmarks/
-module.python-template/
+module-python-template/
 
 # Files:
 log
@@ -508,7 +508,7 @@ data
 dataset
 datasets
 .benchmarks
-module.python-template
+module-python-template
 *.bak
 example.py
 test.py
