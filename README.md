@@ -1,8 +1,8 @@
 # Python Module Template
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit)
-[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/bybatkhuu/module.python-template/2.build-publish.yml?logo=GitHub)](https://github.com/bybatkhuu/module.python-template/actions/workflows/2.build-publish.yml)
-[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/bybatkhuu/module.python-template?logo=GitHub&color=blue)](https://github.com/bybatkhuu/module.python-template/releases)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/bybatkhuu/module-python-template/2.build-publish.yml?logo=GitHub)](https://github.com/bybatkhuu/module-python-template/actions/workflows/2.build-publish.yml)
+[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/bybatkhuu/module-python-template?logo=GitHub&color=blue)](https://github.com/bybatkhuu/module-python-template/releases)
 
 This is a template repository for python module projects.
 
@@ -24,18 +24,18 @@ This is a template repository for python module projects.
 
 - You can use this template repository as reference to create a new repository with the same structure or clone the repository to start a new project. It will help you to organize your project structure and files. It works out of the box for most of the python projects.
 - You can customize (remove, modify or add) the files and directories as needed to meet your project requirements.
-- If you want to use the template repository directly, just click the **[Use this template](https://github.com/new?template_name=module.python-template&template_owner=bybatkhuu)** button and follow the instructions.
-- You can use **cookiecutter** to generate a new project from **[cookiecutter](https://github.com/bybatkhuu/module.python-template/tree/cookiecutter)** branch:
+- If you want to use the template repository directly, just click the **[Use this template](https://github.com/new?template_name=module-python-template&template_owner=bybatkhuu)** button and follow the instructions.
+- You can use **cookiecutter** to generate a new project from **[cookiecutter](https://github.com/bybatkhuu/module-python-template/tree/cookiecutter)** branch:
 
     ```sh
     # Clone the cookiecutter branch:
-    git clone -b cookiecutter https://github.com/bybatkhuu/module.python-template.git
+    git clone -b cookiecutter https://github.com/bybatkhuu/module-python-template.git
 
     # Install cookiecutter:
     pip install cookiecutter
 
     # Generate a new project from the cookiecutter template:
-    cookiecutter -f ./module.python-template
+    cookiecutter -f ./module-python-template
 
 ---
 
@@ -72,20 +72,20 @@ cd ~/workspaces/projects
 **OPTION A.** Clone the repository:
 
 ```sh
-git clone https://github.com/bybatkhuu/module.python-template.git && \
-    cd module.python-template
+git clone https://github.com/bybatkhuu/module-python-template.git && \
+    cd module-python-template
 ```
 
 **OPTION B.** Clone the repository (for **DEVELOPMENT**: git + ssh key):
 
 ```sh
-git clone git@github.com:bybatkhuu/module.python-template.git && \
-    cd module.python-template
+git clone git@github.com:bybatkhuu/module-python-template.git && \
+    cd module-python-template
 ```
 
 **OPTION C.** Download source code:
 
-1. Download archived **zip** file from [**releases**](https://github.com/bybatkhuu/module.python-template/releases).
+1. Download archived **zip** file from [**releases**](https://github.com/bybatkhuu/module-python-template/releases).
 2. Extract it into the projects directory.
 
 ### 3. 📦 Install the package
@@ -105,7 +105,7 @@ pip install -i https://test.pypi.org/simple -U my-module01
 **OPTION B.** Install latest version directly from **GitHub** repository:
 
 ```sh
-pip install git+https://github.com/bybatkhuu/module.python-template.git
+pip install git+https://github.com/bybatkhuu/module-python-template.git
 ```
 
 **OPTION C.** Install from the downloaded **source code**:
@@ -126,7 +126,7 @@ pip install -e .[dev]
 
 **OPTION E.** Install from **pre-built release** files:
 
-1. Download **`.whl`** or **`.tar.gz`** file from [**releases**](https://github.com/bybatkhuu/module.python-template/releases)
+1. Download **`.whl`** or **`.tar.gz`** file from [**releases**](https://github.com/bybatkhuu/module-python-template/releases)
 2. Install with pip:
 
 ```sh

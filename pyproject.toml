@@ -31,12 +31,13 @@ dynamic = ["version", "dependencies", "optional-dependencies"]
 [tool.setuptools.dynamic]
 version = { attr = "my_module01.__version__.__version__" }
 dependencies = { file = "./requirements.txt" }
-optional-dependencies.test = { file = ["./requirements/requirements.test.txt"] }
-optional-dependencies.build = { file = [
-	"./requirements/requirements.build.txt",
-] }
-optional-dependencies.docs = { file = ["./requirements/requirements.docs.txt"] }
-optional-dependencies.dev = { file = [
+
+[tool.setuptools.dynamic.optional-dependencies]
+# Options dependencies for DEVELOPMENT
+test = { file = ["./requirements/requirements.test.txt"] }
+build = { file = ["./requirements/requirements.build.txt"] }
+docs = { file = ["./requirements/requirements.docs.txt"] }
+dev = { file = [
 	"./requirements/requirements.test.txt",
 	"./requirements/requirements.build.txt",
 	"./requirements/requirements.docs.txt",
@@ -48,8 +49,8 @@ optional-dependencies.dev = { file = [
 # venv = ".venv"
 
 [project.urls]
-Homepage = "https://github.com/bybatkhuu/module.python-template"
+Homepage = "https://github.com/bybatkhuu/module-python-template"
 Documentation = "https://pymodule-docs.bybatkhuu.dev"
-Repository = "https://github.com/bybatkhuu/module.python-template.git"
-Issues = "https://github.com/bybatkhuu/module.python-template/issues"
-Changelog = "https://github.com/bybatkhuu/module.python-template/blob/main/CHANGELOG.md"
+Repository = "https://github.com/bybatkhuu/module-python-template.git"
+Issues = "https://github.com/bybatkhuu/module-python-template/issues"
+Changelog = "https://github.com/bybatkhuu/module-python-template/blob/main/CHANGELOG.md"
