@@ -90,8 +90,7 @@ main()
 	_minor=$(echo "${_current_version}" | cut -d. -f2)
 	_patch=$(echo "${_current_version}" | cut -d. -f3)
 
-	local _new_version
-	_new_version=${_current_version}
+	local _new_version=${_current_version}
 	# Determine the new version based on the type of bump:
 	if [ "${_BUMP_TYPE}" == "major" ]; then
 		_new_version="$((_major + 1)).0.0"
