@@ -148,7 +148,6 @@
 		"**/Thumbs.db": true,
 		"**/docs/assets/js/*.js": true
 	},
-	"python.languageServer": "Pylance",
 	"python.analysis.extraPaths": [
 		"${workspaceFolder}/module.python-template/src"
 	]
