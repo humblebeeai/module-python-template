@@ -17,6 +17,8 @@ This is a template repository for python module projects.
 - Examples
 - CI/CD
 
+---
+
 ## 🛠 Installation
 
 ### 1. 🚧 Prerequisites
